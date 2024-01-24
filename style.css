@@ -1,59 +1,128 @@
+/* GENERAL */
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Moirai+One&family=MuseoModerno:ital,wght@0,400;1,300&display=swap');
+
+
 * {
-  margin: 0;
+  margin: 50;
   padding: 0;
+  /* border: 1px red solid; */
 }
 
-html, body {
+body {
+  font-family: 'MuseoModerno', cursive;
   height: 100%;
-  background: #78a7ea;
-  color: white;
-  font-family: "Inconsolata", monospace;
-  font-size: 100%;
+  background-image: linear-gradient(rgb(2, 2, 92), rgb(64, 0, 104), rgb(165, 51, 93), rgb(255, 170, 0));
 }
 
-.title {
-  color: aquamarine;
-  padding: 200px;
+html{
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(254, 254, 254);
+  padding-top: 30%;
+  margin-right: 20%;
+  position: relative;
+  font-size: xxx-large;
+}
+
+/* TRANSITION */
+
+a, 
+.btn {
+  transition: 300ms ease;
+}
+
+/* DESKTOP */
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+  padding-left: 500px;
+}
+
+.logo {
+  font-family: 'MuseoModerno', cursive;
+  text-align: center;
+  align-items: end;
+  justify-content: end;
+}
+
+.home-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+a {
+  color: rgb(254, 254, 254);
+  text-decoration: none;
+  text-decoration-color: rgb(251, 251, 251);
+}
+
+a:hover {
+  color: rgb(255, 157, 0);
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(255, 157, 0);
+}
+
+.logo {
+  font-size: 2rem;
+  color: white;
+  padding-left: 100px;
+  padding-top: 20px;
+}
+
+.logo:hover {
+  cursor: default;
 }
 
 .container {
   width: 100%;
-  height: 100vh;
-  background: #a5b1ed;
+  height: 2000px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-}
-.calculator {
-  background: #6a7ee6
-  padding-box 20px;
-  border-radius: 10px;
-}
-.calculator form input{
-  border: 0;
-  outline: 0;
-  width: 60px;
-  height: 60px;
-  border-radius: 10px;
-  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.2);
-  background: transparent;
-  font-size: 20px;
-  color: #fff;
-  cursor: pointer;
-  margin: 10px;
+  align-items: center;
+  overflow-y: scroll;
+  position: relative;
 }
 
-form .display{
+.h1 {
+  flex-direction: center;
+  justify-content: center;
+}
+
+.grass-img {
+  width: auto;
+  height: 200px;
+  opacity: 100%;
+  /* position: absolute;
+  bottom: -7%;
+  left: 0; */
+}
+
+.grass-container {
   display: flex;
-  justify-content: flex-end;
-  margin: 20px 0;
-}
-form .display input{
-  text-align: right;
-  flex: 1;
-  font-size: 45px;
-  box-shadow: none;
-}
-form input.equal{
-  width: 145px;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100vh;
 }
