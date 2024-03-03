@@ -1,16 +1,10 @@
-import Link from "next/link";
+import { Title } from "@/components/shared/title";
 import React from "react";
 
 export default function Experience() {
   return (
-    <div>
-      <Link
-      href="/experience"
-        className="font-medium text-blue-600 dark:text-blue-500"
-      >
-        Experience
-
-      </Link>
-    </div>
+    <main className="flex flex-col items-center justify-between">
+      <Title name={"Experience"} />
+    </main>
   );
 }

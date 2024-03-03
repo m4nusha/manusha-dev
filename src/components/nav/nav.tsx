@@ -1,35 +1,14 @@
-import Link from "next/link";
 import React from "react";
+import { NavItem } from "./navItem";
 
 export default function Nav() {
   return (
-    <div className="container float-right mb-auto gap-y-4 items-start flex flex-row justify-centre relative h-32 w-32 text-blue-gray-900 pr-20">
-      <ul className="text-centre">
-        <li className="text-centre">
-          <Link className="text-white hover:text-blue-800 text-xl" href="/">
-            Home
-          </Link>
-        </li>
-        <li className="text-centre">
-          <Link className="text-white hover:text-blue-800 text-xl" href="/about">
-            About
-          </Link>
-        </li>
-        <li className="text-centre">
-          <Link className="text-white hover:text-blue-800 text-xl" href="/experience">
-            Experience
-          </Link>
-        </li>
-        <li className="text-centre">
-          <Link className="text-white hover:text-blue-800 text-xl" href="/projects">
-            Projects
-          </Link>
-        </li>
-        <li className="text-centre">
-          <Link className="text-white hover:text-blue-800 text-xl" href="/contact">
-            Contact
-          </Link>
-        </li>
+    <div>
+      <ul className="text-centre flex flex-row gap-4">
+        <NavItem name={"Home"} href={"/"} />
+        <NavItem name={"About"} href={"/about"} />
+        <NavItem name={"Projects"} href={"/projects"} />
+        <NavItem name={"Contact"} href={"/contact"} />
       </ul>
     </div>
   );
