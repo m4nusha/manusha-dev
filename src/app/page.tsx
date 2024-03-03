@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import HomeInfo from "./components/HomeInfo";
+import HomeInfo from "../components/home/HomeInfo";
 
 export default function Home() {
   return (
@@ -8,7 +8,7 @@ export default function Home() {
   
       <Link
       href="/home"
-        className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+        className="font-medium text-blue-600 dark:text-blue-500 "
       >
         <HomeInfo/>
       </Link>
