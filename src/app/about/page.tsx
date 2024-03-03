@@ -10,7 +10,7 @@ export default function About() {
       >
         About
         <p className="flex bg-center flex-row relative">
-          Hi, I'm a software developer based in London.
+          {`Hi, I'm a software developer based in London.`}
         </p>
       </Link>
     </div>
