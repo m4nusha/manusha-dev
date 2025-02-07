@@ -1,33 +1,35 @@
+import React from "react";
 import { Title } from "@/components/shared/title";
-import { Subtitle } from "@/components/shared/subtitle";
+import TypingText from "@/components/shared/typingText";
+import BackgroundClouds from "@/components/shared/background";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-between">
-      <Title name={"Hi"} />
-      <Subtitle name={`I'm Manusha!`} />
+    <main className="relative flex flex-col items-center justify-between h-full scroll-smooth">
+      <BackgroundClouds />
 
-      {/* <Link href="/" className="font-medium text-blue-600 dark:text-blue-500 ">
-        <HomeInfo />
-      </Link> */}
+      <div className="relative z-10 h-[100vh] w-[100vw] flex flex-col justify-center items-center space-y-4" id="home">
+        <Title name="Welcome, I'm Manusha!" />
+        <div>
+          <TypingText />
+        </div>
+      </div>
 
-      {/* <Card title={"Example 1"}>
-        <div>Test 1</div>
-        <div>TEST 2</div>
-      </Card>
+      <div className="relative z-10 h-[100vh] w-[100vw] flex flex-col justify-center items-center space-y-4" id="about">
+        <Title name="About Me" />
+      </div>
 
+      <div className="relative z-10 h-[100vh] w-full flex flex-col justify-center items-center space-y-4" id="experience">
+        <Title name="Behold! My great experience and wisdom..." />
+      </div>
 
-      <Card title={"Example 1"}>
-        <div>Test 1</div>
-        <div>TEST 2</div>
-      </Card>
+      <div className="relative z-10 h-[100vh] w-full flex flex-col justify-center items-center space-y-4" id="projects">
+        <Title name="My Creations" />
+      </div>
 
-
-
-      <Card title={"Example 1"}>
-        <div>Test 1</div>
-        <div>TEST 2</div>
-      </Card> */}
+      <div className="relative z-10 h-[100vh] w-full flex flex-col justify-center items-center space-y-4" id="contact">
+        <Title name="Contact Me!" />
+      </div>
     </main>
   );
 }

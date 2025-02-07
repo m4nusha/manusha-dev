@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import Nav from "@/components/nav/nav";
 import "@/styles/globals.css";
 import AppConfig from "@/config/appConfig";
+import Background from "../components/shared/background";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,8 +27,11 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className={`${inter.className} bg-slate-800 container mx-auto p-2`}>
+      <body
+        className={`${inter.className} bg-pink-300 container mx-auto p-2 overflow-x-hidden flex flex-col relative h-full`}
+      >
         <Nav />
+        <div className="h-14"></div>
         {children}
       </body>
     </html>
