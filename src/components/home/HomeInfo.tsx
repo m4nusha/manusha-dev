@@ -3,7 +3,7 @@ import { useEffect } from "react";
 function HomeInfo() {
 
     useEffect(() => {
-        const a = await fetch('https://api.greatcomcat')
+        const a = fetch('https://api.greatcomcat')
         a 
     },[])
 
